@@ -1,0 +1,13 @@
+body{margin:0}
+.flex{display:flex}
+.fdc{flex-direction:column}
+.jcc{justify-content:center}
+.aic{align-items:center}
+.tac{text-align:center}
+.bookmark{
+  width:70%;
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, .3);
+  padding: 24px;
+}
+.header{}
+.footer{}
