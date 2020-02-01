@@ -1,13 +1,33 @@
-body{margin:0}
+body{margin:0;background:#f3f5f3}
 .flex{display:flex}
 .fdc{flex-direction:column}
 .jcc{justify-content:center}
 .aic{align-items:center}
+.ais{align-items:stretch}
 .tac{text-align:center}
 .bookmark{
-  width:70%;
-  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, .3);
-  padding: 24px;
+  width:80%;
+  box-shadow:0 1px 3px 1px rgba(0, 0, 0, .3);
+  background:#fff;
 }
-.header{}
-.footer{}
+.bg {
+    width: 100%;
+    height: 220px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background: #f0f;
+}
+.header{
+    height: 80px;
+    line-height: 40px;
+    text-align: center;
+    background:transparent url('flor_superior.png') no-repeat right top;
+    background-size: contain;
+}
+.footer{
+    height: 80px;
+    background:transparent url('flor_inferior.png') no-repeat;
+    background-size: cover;
+}
