@@ -4,77 +4,119 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Rouge+Script|Playfair+Display&display=swap" rel="stylesheet">
 
-  <title>Cardápio</title>
+  <title>Cardápio – H&L</title>
 </head>
 <body>
+
+<div id="loading">
+</div>
 
 <div class="bg">
 </div>
 
 <div class="flex jcc">
-  <div class="flex fdc ais bookmark">
+  <div class="flex fdc ais bookmark" id="everything">
     <div class="header">
-      <h1>Cardápio</h1>
+      <h1 class="title">Cardápio</h1>
     </div>
-    <div class="tac">
+    <div class="content">
       <section>
-        <h3>Coquetel</h3>
-        <p>
-          Canapé caprese com molho pesto - Cestinha de cream cheese com geléia de frutas
-          vermelhas - Vol-au-vent de filé com aspargos - Batata recheada com cream cheese e bacon
-          crocante - Tartelete de calabresa rúcula e ricota - Mini tapioca de carne seca com abóbora -
-          Bruscheta de tomate com alho em flocos - Isca de frango com bacon e queijo coalho ao
-          barbecue - Croissant presunto e queijo - Quiche lorraine de gorgonzola com nozes
-        </p>
+        <h3 class="tac subtitle">Coquetéis</h3>
+        <ol>
+          <li>Batata recheada com cream cheese e bacon crocante</li>
+          <li>Bruschetta de tomate com alho em flocos</li>
+          <li>Canapé caprese com molho pesto</li>
+          <li>Cestinha de cream cheese com geléia de frutas vermelhas</li>
+          <li>Croissant presunto e queijo</li>
+          <li>Isca de frango com bacon e queijo coalho ao barbecue</li>
+          <li>Mini tapioca de carne seca com abóbora</li>
+          <li>Quiche lorraine de gorgonzola com nozes</li>
+          <li>Tartelete de calabresa rúcula e ricota</li>
+          <li>Vol-au-vent de filé com aspargos</li>
+        </ol>
       </section>
       <section>
-        <h3>Salgados fritos</h3>
-        <p>
-          Bombom de aipim com carne seca - Bombom de carne - Bombom de doce de leite - Quibe
-          com catupiry - Coxinha de frango com catupiry - Maravilha de queijo - Risole de alho
-          poró - Camafeu de camarão
-        </p>
+        <h3 class="tac subtitle">Salgados fritos</h3>
+        <ol>
+          <li>Bombom de aipim com carne seca</li>
+          <li>Bombom de carne</li>
+          <li>Bombom de doce de leite</li>
+          <li>Camafeu de camarão</li>
+          <li>Coxinha de frango com catupiry</li>
+          <li>Maravilha de queijo</li>
+          <li>Quibe com catupiry</li>
+          <li>Risole de alho poró</li>
+        </ol>
       </section>
       <section>
-        <h3>Salgados assados</h3>
-        <p>
-          Empada de frango - Folhado de frango - Fios de ovos com bacon - Folhado de nozes com
-          leite condensado - Folhado de champingnon - Folhado de queijo coalho - Folhado de
-          palmito - Aipim com carne de sol
-        </p>
+        <h3 class="tac subtitle">Salgados assados</h3>
+        <ol>
+          <li>Aipim com carne de sol</li>
+          <li>Empada de frango</li>
+          <li>Fios de ovos com bacon</li>
+          <li>Folhado de champingnon</li>
+          <li>Folhado de frango</li>
+          <li>Folhado de nozes com leite condensado</li>
+          <li>Folhado de palmito</li>
+          <li>Folhado de queijo coalho</li>
+        </ol>
       </section>
       <section>
-        <h3>Mini empratados</h3>
-        <p>
-          Salada de alface americana e roxa, rúcula e uvas roxas com molho especial - Purê de batata
-          com castanha e isca de frango grelhado - Escondidinho de carne - Filé com purê de
-          batata baroa
-        </p>
+        <h3 class="tac subtitle">Mini empratados</h3>
+        <ol>
+          <li>Salada de alface americana e roxa, rúcula e uvas roxas com molho especial</li>
+          <li>Purê de batata com castanha e isca de frango grelhado</li>
+          <li>Escondidinho de carne</li>
+          <li>Filé com purê de batata baroa</li>
+        </ol>
       </section>
       <section>
-        <h3>Mesa do brunch</h3>
-        <p>
-          Enroladinho de queijo - Assado de frango - Enroladinho de salsicha - Pão sírio, de metro e
-          brioche - Mini sanduíche de tomate seco com rúcula e requeijão - Mini sanduíche de peito de
-          peru e queijo - Patês de frango, azeitona e atum - Bolos de laranja, mandioca, chocolate e
-          banana com passas - Geléias de morango, framboesa e frutas vermelhas - Tarteletes -
-          Tábua de frios - Rosquinhas - Antepasto de berinjela - Frutas laminadas - Biscoito de queijo
-        </p>
+        <h3 class="tac subtitle">Mesa do brunch</h3>
+        <ol>
+          <li>Enroladinho de queijo</li>
+          <li>Assado de frango</li>
+          <li>Enroladinho de salsicha</li>
+          <li>Pão sírio, de metro e brioche</li>
+          <li>Mini sanduíche de tomate seco com rúcula e requeijão</li>
+          <li>Mini sanduíche de peito de peru e queijo</li>
+          <li>Patês de frango, azeitona e atum</li>
+          <li>Bolos de laranja, mandioca, chocolate e banana com passas</li>
+          <li>Geléias de morango, framboesa e frutas vermelhas</li>
+          <li>Tarteletes</li>
+          <li>Tábua de frios</li>
+          <li>Rosquinhas</li>
+          <li>Antepasto de berinjela</li>
+          <li>Frutas laminadas</li>
+          <li>Biscoito de queijo</li>
+        </ol>
       </section>
       <section>
-        <h3>Bebidas</h3>
-        <p>
-          Coquetel sem álcool de morango e pêssego - Suco de acerola e maracujá - Coca Cola -
-          Guaraná Antártica - Petra puro malte
-        </p>
+        <h3 class="tac subtitle">Bebidas</h3>
+        <ol>
+          <li>Coquetel sem álcool de morango e pêssego</li>
+          <li>Suco de acerola e maracujá</li>
+          <li>Coca-Cola</li>
+          <li>Guaraná Antarctica</li>
+          <li>Budweiser</li>
+          <li>Heineken</li>
+          <li>Vinho branco de chardonnay</li>
+        </ol>
       </section>
     </div>
     <div class="footer">
     </div>
   </div>
 </div>
+
+<script>
+setTimeout(function(){
+  document.getElementById('loading').style.display = 'none'
+  document.getElementById('everything').style.display = 'flex'
+}, 500)
+</script>
 
 </body>
 </html>
