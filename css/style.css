@@ -64,8 +64,10 @@ h3,ol>li,h1{color:#555}
 }
 .footer{
   height:80px;
-  background:url(/img/flor_inferior.png) no-repeat;
-  background-size:cover
+  background-image:url(/img/esquerda.png),url(/img/direita.png);
+  background-repeat:no-repeat,no-repeat;
+  background-position:left bottom,right bottom;
+  background-size:contain,contain
 }
 .title{
   font-family:'Rouge Script',cursive;
