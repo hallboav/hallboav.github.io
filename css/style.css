@@ -75,6 +75,7 @@ h3,ol>li,h1{color:#555}
   font-weight:lighter
 }
 .subtitle,ol>li{
+  font-weight:lighter;
   font-family:'Playfair Display',cursive
 }
 #loading{
