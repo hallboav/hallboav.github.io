@@ -118,9 +118,13 @@
 
 <script>
 setTimeout(function(){
-  document.getElementById('loading').style.display = 'none'
+  document.getElementById('loading').style.opacity = 1
+}, 1)
+
+setTimeout(function(){
+  document.getElementById('loading').style.opacity = 0
   document.getElementById('everything').style.display = 'flex'
-}, 7000)
+}, 1500)
 </script>
 
 </body>
