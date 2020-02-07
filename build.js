@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const minify = require('@node-minify/core')
 const cleanCSS = require('@node-minify/clean-css')
 const htmlMinifier = require('@node-minify/html-minifier')
