@@ -1,0 +1,24 @@
+{
+  "name": "hallboav.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hallboav/hallboav.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hallboav/hallboav.github.io/issues"
+  },
+  "homepage": "https://github.com/hallboav/hallboav.github.io#readme",
+  "dependencies": {
+    "@node-minify/clean-css": "^5.3.0",
+    "@node-minify/core": "^5.3.0",
+    "@node-minify/html-minifier": "^5.3.0"
+  }
+}
