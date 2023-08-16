@@ -1,7 +1,7 @@
 'use client';
 
 import { Open_Sans, Fira_Mono } from 'next/font/google';
-import type { FC } from 'react';
+import { FC, useEffect } from 'react';
 import {
   createTheme,
   CssBaseline,
@@ -20,6 +20,11 @@ import {
   Techs,
 } from '@/components';
 import type { CurriculumVitae } from '@/cv';
+import { Language } from '@/cv';
+import LanguageProvider from '@/lib/LanguageProvider';
+import dayjs from 'dayjs';
+import 'dayjs/locale/pt-br';
+import 'dayjs/locale/en';
 
 const Bookmark: FC<StackProps> = (props) => <Stack {...props} />;
 
@@ -86,7 +91,7 @@ const CurriculumVitaePage: FC<{ cv: CurriculumVitae }> = ({ cv }) => {
   };
 
   const highlighted = [
-    'amazon',
+    'aws',
     'docker',
     'gitlab',
     'java',
@@ -104,36 +109,41 @@ const CurriculumVitaePage: FC<{ cv: CurriculumVitae }> = ({ cv }) => {
 
   const MAX_EXPERIENCE_ITEMS = 4;
 
+  const lang = Language.enUs;
+  dayjs.locale('en-us');
+
   return (
     <>
       <CssBaseline />
       <GlobalStyles styles={globalStyles} />
-      <ThemeProvider theme={theme}>
-        <Stack
-          {...margins}
-          spacing={LAYOUT_SPACING}
-          direction="row"
-          height="100%"
-        >
-          <Content height="100%" spacing={0.5}>
-            <Intro name={cv.name} role={cv.role} intro={cv.intro} />
-            <Experience
-              experiences={cv.experiences}
-              maxItems={MAX_EXPERIENCE_ITEMS}
-            />
-            <Certifications certifications={cv.certifications} />
-            <Education education={cv.education} />
-          </Content>
+      <LanguageProvider lang={lang}>
+        <ThemeProvider theme={theme}>
+          <Stack
+            {...margins}
+            spacing={LAYOUT_SPACING}
+            direction="row"
+            height="100%"
+          >
+            <Content height="100%" spacing={0.5}>
+              <Intro name={cv.name} role={cv.role} intro={cv.intro} />
+              <Experience
+                experiences={cv.experiences}
+                maxItems={MAX_EXPERIENCE_ITEMS}
+              />
+              <Certifications certifications={cv.certifications} />
+              <Education education={cv.education} />
+            </Content>
 
-          <Bookmark width="33%" spacing={1.5}>
-            <Contact
-              contacts={cv.contacts}
-              fontFamily={firaMono400.style.fontFamily}
-            />
-            <Techs techs={cv.techs} highlighted={highlighted} />
-          </Bookmark>
-        </Stack>
-      </ThemeProvider>
+            <Bookmark width="33%" spacing={1.5}>
+              <Contact
+                contacts={cv.contacts}
+                fontFamily={firaMono400.style.fontFamily}
+              />
+              <Techs techs={cv.techs} highlighted={highlighted} />
+            </Bookmark>
+          </Stack>
+        </ThemeProvider>
+      </LanguageProvider>
     </>
   );
 };

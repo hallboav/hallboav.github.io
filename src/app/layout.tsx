@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Hallison Boaventura's CV",
-  description: "Hallison Boaventura's CV",
+  title: "Hallison Boaventura's Curriculum Vitae",
+  description: "Hallison Boaventura's Curriculum Vitae",
 };
 
 export default function RootLayout({
@@ -9,7 +9,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html>
       <body>{children}</body>
     </html>
   );

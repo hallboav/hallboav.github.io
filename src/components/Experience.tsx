@@ -3,11 +3,13 @@ import { Stack, Typography } from '@mui/material';
 import dayjs from 'dayjs';
 import duration from 'dayjs/plugin/duration';
 import relativeTime from 'dayjs/plugin/relativeTime';
-import type { CurriculumVitae } from '@/cv';
+import { CurriculumVitae, Language } from '@/cv';
 import { parseHtml } from '@/lib';
 import Timeline from './Timeline';
 import TimelineItem from './TimelineItem';
 import PeriodExperience from './PeriodExperience';
+import { useLang } from '@/lib/LanguageProvider';
+import Image from 'next/image';
 
 dayjs.extend(duration);
 dayjs.extend(relativeTime);
@@ -22,7 +24,25 @@ const Experience: FC<ExperienceProps> = ({
   experiences,
   maxItems = DEFAULT_MAX_ITEMS,
 }) => {
-  const slicedExperiences = experiences.slice(0, maxItems);
+  const lang = useLang();
+
+  const workingForText = (() =>
+    ({
+      [Language.ptBr]: 'Trabalhando para',
+      [Language.enUs]: 'Working for',
+    }[lang]))();
+
+  const atText = (() =>
+    ({
+      [Language.ptBr]: 'em',
+      [Language.enUs]: 'at',
+    }[lang]))();
+
+  const title = (() =>
+    ({
+      [Language.ptBr]: 'Experiência',
+      [Language.enUs]: 'Expierience',
+    }[lang]))();
 
   const diff = experiences.reduce((prev, curr) => {
     return prev + dayjs(curr.finishedAt).diff(curr.startedAt);
@@ -30,12 +50,20 @@ const Experience: FC<ExperienceProps> = ({
 
   const expTime = dayjs.duration(diff).humanize();
 
+  const subtitle = (() =>
+    ({
+      [Language.ptBr]: `mostrando últimas ${maxItems}`,
+      [Language.enUs]: `showing last ${maxItems}`,
+    }[lang]))();
+
+  const slicedExperiences = experiences.slice(0, maxItems);
+
   return (
     <Timeline
       title={
         <Stack spacing={1} direction="row" alignItems="center">
-          <span>Experience</span>
-          <Typography variant="body2">(~{expTime} in total)</Typography>
+          <span>{title}</span>
+          <Typography variant="body2">({subtitle})</Typography>
         </Stack>
       }
     >
@@ -53,7 +81,7 @@ const Experience: FC<ExperienceProps> = ({
           index
         ) => (
           <TimelineItem
-            key={locatedAt || company}
+            key={company[lang].concat(String(index))}
             last={index === slicedExperiences.length - 1}
             ellipsis={slicedExperiences.length === maxItems}
             PeriodComponent={() => (
@@ -62,15 +90,16 @@ const Experience: FC<ExperienceProps> = ({
             HeaderComponent={() => (
               <Stack>
                 <Typography variant="body1" fontWeight="bold">
-                  {role}{' '}
+                  {role[lang]}{' '}
                   <Typography
                     variant="body1"
                     fontWeight="normal"
                     component="span"
                   >
-                    at
+                    {atText}
                   </Typography>{' '}
-                  {company} {country}
+                  {company[lang]}{' '}
+                  <Image src={country} alt="country" width={15} height={10} />
                 </Typography>
                 {locatedAt && (
                   <Typography variant="body1" fontWeight="bold">
@@ -79,15 +108,15 @@ const Experience: FC<ExperienceProps> = ({
                       fontWeight="normal"
                       component="span"
                     >
-                      Working for
+                      {workingForText}
                     </Typography>{' '}
-                    {locatedAt}
+                    {locatedAt[lang]}
                   </Typography>
                 )}
               </Stack>
             )}
           >
-            {parseHtml(description)}
+            {parseHtml(description[lang])}
           </TimelineItem>
         )
       )}
