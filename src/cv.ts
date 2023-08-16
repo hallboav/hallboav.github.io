@@ -74,8 +74,8 @@ const cv: CurriculumVitae = {
       '<p>An expert in various <strong>current and legacy technologies</strong>, has <strong>over 16 years</strong> of experience, has worked in <strong>relevant roles, companies and government agencies</strong> and holds <strong>relevant certifications</strong>.</p>',
   },
   role: {
-    [Language.ptBr]: 'Arquiteto de software/dev full cycle/eng. devops',
-    [Language.enUs]: 'Software architect/full cycle developer/devops engineer',
+    [Language.ptBr]: 'Arquiteto de software/dev full cycle',
+    [Language.enUs]: 'Software architect/full cycle developer',
   },
   avatarUrl: '/hall.jpeg',
   contacts: [
