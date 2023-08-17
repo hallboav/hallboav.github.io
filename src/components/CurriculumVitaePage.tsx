@@ -1,7 +1,8 @@
 'use client';
 
 import { Open_Sans, Fira_Mono } from 'next/font/google';
-import { FC, useEffect } from 'react';
+import type { FC } from 'react';
+import { useSearchParams } from 'next/navigation';
 import {
   createTheme,
   CssBaseline,
@@ -109,8 +110,12 @@ const CurriculumVitaePage: FC<{ cv: CurriculumVitae }> = ({ cv }) => {
 
   const MAX_EXPERIENCE_ITEMS = 4;
 
-  const lang = Language.enUs;
-  dayjs.locale('en-us');
+  // const searchParams = new URLSearchParams(window.location.search);
+  const searchParams = useSearchParams();
+  const isPtBr = searchParams.get('language') === Language.ptBr;
+
+  const lang = isPtBr ? Language.ptBr : Language.enUs;
+  dayjs.locale(isPtBr ? 'pt-br' : 'en-us');
 
   return (
     <>
