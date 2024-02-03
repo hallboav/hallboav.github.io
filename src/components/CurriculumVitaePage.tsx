@@ -99,6 +99,7 @@ const CurriculumVitaePage: FC<{ cv: CurriculumVitae }> = ({ cv }) => {
     'kubernetes',
     'linux',
     'next.js',
+    'javascript',
     'node.js',
     'php',
     'react.js',
@@ -108,7 +109,7 @@ const CurriculumVitaePage: FC<{ cv: CurriculumVitae }> = ({ cv }) => {
     'typescript',
   ];
 
-  const MAX_EXPERIENCE_ITEMS = 4;
+  const MAX_EXPERIENCE_ITEMS = -1;
 
   // const searchParams = new URLSearchParams(window.location.search);
   const searchParams = useSearchParams();

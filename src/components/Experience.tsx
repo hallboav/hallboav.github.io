@@ -56,14 +56,16 @@ const Experience: FC<ExperienceProps> = ({
       [Language.enUs]: `showing last ${maxItems}`,
     }[lang]))();
 
-  const slicedExperiences = experiences.slice(0, maxItems);
+  const slicedExperiences = maxItems !== -1 ? experiences.slice(0, maxItems) : experiences;
 
   return (
     <Timeline
       title={
         <Stack spacing={1} direction="row" alignItems="center">
           <span>{title}</span>
-          <Typography variant="body2">({subtitle})</Typography>
+          {maxItems !== -1 && (
+            <Typography variant="body2">({subtitle})</Typography>
+          )}
         </Stack>
       }
     >

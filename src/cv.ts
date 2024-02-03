@@ -120,8 +120,9 @@ const cv: CurriculumVitae = {
       },
       description: {
         [Language.ptBr]: [
-          '<p>A Recharge vende cartões virtuais e precisa de páginas modernas para seus sites. Trabalhei na construção da nova arquitetura de frontend e também no desenvolvimento de novas páginas para venda dos produtos virtuais Google Play Card e Apple Gift Card. Recentemente, também atualizamos a página de checkout.</p>',
-          '<p>Usando as seguintes tecnologias <strong>TypeScript</strong>, <strong>Next.js</strong>, <strong>React.js</strong>, <strong>XState</strong>, <strong>Material UI</strong>, <strong>Unleash</strong>, <strong>ahooks</strong>, <strong>Playwright</strong>, <strong>GraphQL</strong>, <strong>React Hook Form</strong>, <strong>Storybook</strong> e outros.</p>',
+          '<p>A Recharge vende cartões virtuais e precisa de páginas modernas para seus sites. Trabalhei na construção da nova arquitetura de frontend e também no desenvolvimento de novas páginas para venda dos produtos virtuais Google Play Card e Apple Gift Card. Recentemente, também reconstruímos a página de checkout.</p>',
+          '<p>Além de minhas atribuições iniciais, fiz parte da equipe de recrutamento responsável pela contratação de desenvolvedores frontend seniores com foco em React.js.</p>',
+          '<p>Usando as seguintes tecnologias <strong>TypeScript</strong>, <strong>Next.js</strong>, <strong>Datadog</strong>, <strong>Amazon AWS</strong>, <strong>React.js</strong>, <strong>Preact</strong>, <strong>XState</strong>, <strong>Material UI</strong>, <strong>Unleash</strong>, <strong>ahooks</strong>, <strong>Playwright</strong>, <strong>GraphQL</strong>, <strong>React Hook Form</strong>, <strong>Storybook</strong> e outros.</p>',
         ].join(''),
         [Language.enUs]: [
           '<p>Recharge sells virtual cards and needs modern pages for their websites. I worked on the <strong>construction of the new frontend</strong> architecture and also on the development of new pages for selling <strong>Google Play Card</strong> and <strong>Apple Gift Card</strong> virtual products. We recently updated the checkout page as well.</p>',
@@ -149,6 +150,7 @@ const cv: CurriculumVitae = {
       description: {
         [Language.ptBr]: [
           '<p>Dois outros arquitetos e eu fazíamos parte da equipe de qualidade. Desenhamos novos sistemas e também mapeamos os sistemas legados e processos de contratos anteriores, para que pudéssemos garantir que tudo estivesse alinhado com nossas expectativas como arquitetos.</p>',
+          '<p>Além de minhas atribuições como arquiteto, foi-me confiado a tarefa de desenvolver por completo o sistema <strong>Comida no Prato</strong> do programa Brasil Fraterno; o desenvolvimento demorou pouco mais de um mês e foi um sucesso: 3,8 milhões de pessoas beneficiadas com 73,5 mil toneladas de alimentos.</p>',
           '<p>Lidávamos diariamente com <strong>PHP</strong>, <strong>Java</strong>, <strong>Node.js</strong>, <strong>Laravel</strong>, <strong>Symfony</strong>, <strong>React.js</strong>, <strong>Vue.js</strong>, <strong>Angular</strong>, <strong>OpenShift</strong>, <strong>GitLab</strong>, <strong>Sonatype Nexus</strong>, <strong>Kubernetes</strong>, <strong>SonarQube</strong> e muitas outras tecnologias.</p>',
         ].join(''),
         [Language.enUs]: [
@@ -205,7 +207,7 @@ const cv: CurriculumVitae = {
       description: {
         [Language.ptBr]: [
           '<p>O Itamaraty trabalha com vários sistemas ininterruptos críticos que são acessados por todos os postos e embaixadas brasileiras ao redor do mundo.</p>',
-          '<p>Eu estava trabalhando como <strong>arquiteto de software/desenvolvedor</strong> e nós diariamente lidávamos com <strong>PHP</strong>, <strong>Zend Server</strong>, <strong>Docker</strong>, <strong>Kubernetes</strong>, <strong>Atlassian Bamboo</strong>, <strong>Shell script</strong>, <strong>JavaScript</strong>, <strong>Symfony</strong>, <strong>Laminas</strong>, <strong>Zend Framework</strong>, <strong>Doctrine</strong>, <strong>PHPUnit</strong>, <strong>PHPStan</strong>, <strong>PostgreSQL</strong>, <strong>Node.js</strong>, <strong>React.js</strong>, <strong>AngularJS</strong>, e outros.</p>',
+          '<p>Eu estava trabalhando como <strong>arquiteto de software/desenvolvedor</strong> e nós diariamente lidávamos com <strong>PHP</strong>, <strong>Zend Server</strong>, <strong>Docker</strong>, <strong>Kubernetes</strong>, <strong>Atlassian Bamboo</strong>, <strong>Shell script</strong>, <strong>Selenium</strong>, <strong>JavaScript</strong>, <strong>Symfony</strong>, <strong>Laminas</strong>, <strong>Zend Framework</strong>, <strong>Doctrine</strong>, <strong>PHPUnit</strong>, <strong>PHPStan</strong>, <strong>PostgreSQL</strong>, <strong>Node.js</strong>, <strong>React.js</strong>, <strong>AngularJS</strong>, e outros.</p>',
         ].join(''),
         [Language.enUs]: [
           '<p>The Ministry of Foreign Affairs (Itamaraty) works with several critical nonstop systems that are accessed by all Brazilian posts and embassies around the world.</p>',
@@ -231,8 +233,18 @@ const cv: CurriculumVitae = {
         [Language.enUs]: 'Software engineer',
       },
       description: {
-        [Language.ptBr]:
+        [Language.ptBr]: [
           '<p>Escrevi alguns documentos sobre o novo processo de versionamento de código e CI/CD, realizei algumas reuniões e também ajustei alguns scripts PHP de sistemas legados TRF1. Fiz parte dessa equipe apenas um mês, pois recebi uma proposta para trabalhar no Itamaraty.</p>',
+          '<p>Tive contato com bancos de dados <strong>Oracle</strong>, <strong>testes automatizados</strong>, <strong>JavaScript</strong>, <strong>React Native</strong> e <strong>PHP</strong> com <strong>Laravel</strong>, etc.</p>',
+          '<br />',
+          '<br />',
+          '<br />',
+          '<br />',
+          '<br />',
+          '<br />',
+          '<br />',
+          '<br />',
+        ].join(''),
         [Language.enUs]:
           '<p>I wrote some documents about the new code versioning process and CI/CD, held some meetings, and also tweaked some PHP scripts from legacy TRF1 systems. I was part of this team for only a month, as I received a proposal to work at the Ministry of Foreign Affairs (Itamaraty).</p>',
       },
@@ -252,9 +264,8 @@ const cv: CurriculumVitae = {
       },
       description: {
         [Language.ptBr]: [
-          '<p>Desenhei a arquitetura e codifiquei um software PHP (CLI) usando o Symfony Console Component e outros componentes do Symfony. Esse software foi utilizado para gerar relatórios altamente customizáveis de logs (que eram recebidos via Syslog e armazenados em MongoDB) do Aker Firewall.</p>',
-          '<p>Fui um dos responsáveis pela manutenção do código (mantenedor de software/revisor de código), analisando principalmente a segurança, desempenho e qualidade do código, além de outros detalhes não menos importantes. Tudo foi gerenciado através do GitLab. Usamos Jenkins para integração contínua.</p>',
-          '<p>Escrevi documentos técnicos, como termo de abertura, definição do projeto e declaração do projeto. Gerenciei uma equipe de dois estagiários e um desenvolvedor PHP de nível médio por dois meses, depois o projeto foi mesclado com um maior, onde deixei de gerenciar.</p>',
+          '<p>Desenhei e desenvolvi um software PHP (CLI) com Symfony Console Component e outros componentes Symfony para criar relatórios personalizados de logs do Aker Firewall, recebidos via Syslog e armazenados em MongoDB. Além disso, atuei na manutenção do código, com foco em segurança, desempenho e qualidade, utilizando GitLab para o gerenciamento e Jenkins para integração contínua. Também redigi documentos técnicos e liderei uma equipe de dois estagiários e um desenvolvedor PHP de nível médio por dois meses antes de o projeto ser integrado a outro maior.</p>',
+          '<p>Algumas tecnologias que usávamos com frequência <strong>PHP</strong>, <strong>C</strong>, <strong>Zend</strong>, <strong>Symfony</strong>, <strong>AngularJS</strong>, <strong>jQuery</strong>, <strong>Doctrine</strong>, <strong>Propel</strong>, <strong>GitLab</strong>, <strong>Jenkins</strong>, <strong>PHPMD</strong>, <strong>PHPLOC</strong>, <strong>PHPCPD</strong>, <strong>PHPCBF</strong>, <strong>Phing</strong>, <strong>Selenium</strong>, <strong>Apache Ant</strong>, <strong>MongoDB</strong>, <strong>MariaDB</strong>, <strong>SQLite</strong>, <strong>PHPUnit</strong>, <strong>Laravel</strong>, <strong>Node.js</strong>, <strong>expressões regulares</strong>, <strong>Syslog</strong>, <strong>Linux</strong> e muitas outras.</p>',
         ].join(''),
         [Language.enUs]: [
           '<p>I designed the architecture and coded a PHP (CLI) software using the Symfony Console Component and other Symfony components. That software was used to generate highly customizable reports of logs (which were received via Syslog and stored in MongoDB) from Aker Firewall.</p>',
@@ -264,13 +275,13 @@ const cv: CurriculumVitae = {
       },
     },
     {
-      startedAt: '2013-04',
+      startedAt: '2011-04',
       finishedAt: '2015-05',
       country:
         'https://purecatamphetamine.github.io/country-flag-icons/3x2/BR.svg',
       company: {
-        [Language.ptBr]: 'ListaDaqui (empreendedorismo)',
-        [Language.enUs]: 'ListaDaqui (entrepreneurship)',
+        [Language.ptBr]: 'Listadaqui (empreendedorismo)',
+        [Language.enUs]: 'Listadaqui (entrepreneurship)',
       },
       role: {
         [Language.ptBr]: 'Desenvolvedor',
@@ -278,8 +289,8 @@ const cv: CurriculumVitae = {
       },
       description: {
         [Language.ptBr]: [
-          '<p>O Listadaqui foi um sistema que desenvolvi (usando PHP, MySQL e AngularJS) e trabalhei nele por alguns anos. Uma aventura no empreendedorismo.</p>',
           '<p>O sistema tinha em seu banco de dados o cadastro de todas as pequenas, médias e grandes empresas da cidade, e também dos autônomos, mas quem assinou o diamante, ouro, ou o plano prata pode aparecer em posições melhores na página de resultados de pesquisa do sistema e pode ter páginas personalizadas. O sistema era uma espécie de guia comercial.</p>',
+          '<p>As principais tecnologias usadas foram <strong>PHP</strong>, <strong>MySQL</strong> e <strong>AngularJS</strong>.</p>',
         ].join(''),
         [Language.enUs]: [
           '<p>Listadaqui was a system I developed (using PHP, MySQL, and AngularJS) and worked on it for a few years. An adventure in entrepreneurship.</p>',
@@ -301,8 +312,9 @@ const cv: CurriculumVitae = {
         [Language.enUs]: 'Apprentice in computer science',
       },
       description: {
-        [Language.ptBr]:
-          '<p>In addition to all the subjects of the computer science course, I used to program things like:</p><ul><li>PHP pages using cURL extension for crawling purposes</li><li>Bot, using C and WIN32 API, for a game (Tibia) that I used to play</li><li>Keyloggers, Trojans, PHP shells, and other security-related software for learning purposes</li><li>Control the electric energy of my house: turning on and off power plugs and lamps, etc.</li></ul>',
+        [Language.ptBr]: [
+          '<p>Além de todas as disciplinas do curso de informática, eu programava coisas como: páginas PHP usando extensão cURL para fins de crawling/scraping; bot, usando API C e WIN32, para um jogo (Tibia) que eu costumava jogar; keyloggers, trojans, shells PHP e outros softwares relacionados à segurança para fins de aprendizagem; controlar a energia elétrica da minha casa: ligar e desligar tomadas e lâmpadas, etc.</p>',
+        ].join(''),
         [Language.enUs]:
           '<p>In addition to all the subjects of the computer science course, I used to program things like:</p><ul><li>PHP pages using cURL extension for crawling purposes</li><li>Bot, using C and WIN32 API, for a game (Tibia) that I used to play</li><li>Keyloggers, Trojans, PHP shells, and other security-related software for learning purposes</li><li>Control the electric energy of my house: turning on and off power plugs and lamps, etc.</li></ul>',
       },
@@ -405,6 +417,7 @@ const cv: CurriculumVitae = {
     'MariaDB',
     'Material UI',
     'MongoDB',
+    'NativeBase',
     'Next.js',
     'Nginx',
     'Node.js',
@@ -416,11 +429,13 @@ const cv: CurriculumVitae = {
     'Playwright',
     'PostgreSQL',
     'Preact',
+    'Puppeteer',
     'Python',
     'RabbitMQ',
     'React Native',
     'React.js',
     'Redux',
+    'Selenium',
     'Sentry',
     'Shell script',
     'SonarQube',
@@ -428,6 +443,7 @@ const cv: CurriculumVitae = {
     'SQLite',
     'Storybook',
     'Symfony',
+    'Taiga',
     'Taiga',
     'TypeScript',
     'Unleash',
